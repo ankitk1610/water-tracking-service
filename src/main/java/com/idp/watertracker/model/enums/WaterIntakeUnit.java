@@ -14,6 +14,14 @@ public enum WaterIntakeUnit {
     private String value;
     private String description;
 
+    public String getValue() {
+        return  value;
+    }
+
+    public String getDescription() {
+        return  description;
+    }
+
     WaterIntakeUnit(String value, String description) {
         this.value = value;
         this.description = description;

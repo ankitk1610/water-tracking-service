@@ -3,7 +3,6 @@ package com.idp.watertracker.exception.handler;
 import com.idp.watertracker.exception.IntakeNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -27,14 +26,14 @@ public class ValidationExceptionHandler {
     }
 
     @ExceptionHandler(IllegalArgumentException.class)
-    public ResponseEntity<Map<String, String>> handleInvalidEnumValue(IllegalArgumentException ex) {
+    public ResponseEntity<Map<String, String>> handleInvalidIntakeUnit(IllegalArgumentException ex) {
         Map<String, String> errorResponse = new HashMap<>();
         errorResponse.put("error", ex.getMessage());
         return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(IntakeNotFoundException.class)
-    public ResponseEntity<Map<String, String>> handleInvalidEnumValue(IntakeNotFoundException ex) {
+    public ResponseEntity<Map<String, String>> handleInvalidIntakeUnit(IntakeNotFoundException ex) {
         Map<String, String> errorResponse = new HashMap<>();
         errorResponse.put("error", ex.getMessage());
         return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);

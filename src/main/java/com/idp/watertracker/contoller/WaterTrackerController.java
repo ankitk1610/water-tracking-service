@@ -2,6 +2,8 @@ package com.idp.watertracker.contoller;
 
 
 import com.idp.watertracker.model.WaterIntake;
+import com.idp.watertracker.model.WaterIntakeUnitResponse;
+import com.idp.watertracker.model.enums.WaterIntakeUnit;
 import com.idp.watertracker.service.WaterTrackerService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import java.net.URI;
+import java.util.Arrays;
 
 @RestController
 @RequestMapping("water-intake")
@@ -34,16 +36,16 @@ public class WaterTrackerController {
 
 
     @PostMapping()
-    public ResponseEntity<?> saveWaterIntake(@Valid  @RequestBody WaterIntake waterIntake) {
+    public ResponseEntity<?> saveWaterIntake(@Valid @RequestBody WaterIntake waterIntake) {
         return ResponseEntity.status(HttpStatus.CREATED).body(
                 waterTrackerService.saveWaterIntake(waterIntake)
         );
     }
 
     @PutMapping()
-    public ResponseEntity<?> saveWaterIntake(@RequestParam("id") String id , @Valid  @RequestBody WaterIntake waterIntake) {
+    public ResponseEntity<?> saveWaterIntake(@RequestParam("id") String id, @Valid @RequestBody WaterIntake waterIntake) {
         return ResponseEntity.status(HttpStatus.OK).body(
-                waterTrackerService.updateWaterIntake(id,waterIntake)
+                waterTrackerService.updateWaterIntake(id, waterIntake)
         );
     }
 
@@ -51,5 +53,16 @@ public class WaterTrackerController {
     public ResponseEntity<?> getUsersWaterIntake(@RequestParam(name = "username") String username) {
         return ResponseEntity.status(HttpStatus.OK).body(
                 waterTrackerService.getWaterIntakeByUsername(username));
+    }
+
+    @GetMapping("quantity")
+    public ResponseEntity<?> getUsersWaterIntake() {
+        return ResponseEntity.status(HttpStatus.OK).body(
+                Arrays.stream(WaterIntakeUnit.values()).map(t ->
+                        WaterIntakeUnitResponse.builder()
+                                .unit(t.getValue())
+                                .description(t.getDescription())
+                                .build()
+                ).toList());
     }
 }

@@ -11,23 +11,22 @@ import org.springframework.data.annotation.Id;
 
 @Data
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
-public class WaterIntake{
+public class WaterIntake {
 
     @Id
     private String id;
 
     @NotBlank
-    private  String username;
+    private String username;
 
     private WaterIntakeUnit unit;
 
-    private  int quantity;
+    private int quantity;
 
     @Timestamp
     private long createdAt = System.currentTimeMillis();
 
     @Timestamp
     private long updatedAt = System.currentTimeMillis();
-
 
 }
