@@ -7,12 +7,11 @@ import com.idp.watertracker.model.enums.WaterIntakeUnit;
 import jakarta.validation.constraints.NotBlank;
 import jdk.jfr.Timestamp;
 import lombok.Data;
-import lombok.NonNull;
 import org.springframework.data.annotation.Id;
 
 @Data
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
-public class WaterIntake {
+public class WaterIntake{
 
     @Id
     private String id;
@@ -26,4 +25,9 @@ public class WaterIntake {
 
     @Timestamp
     private long createdAt = System.currentTimeMillis();
+
+    @Timestamp
+    private long updatedAt = System.currentTimeMillis();
+
+
 }

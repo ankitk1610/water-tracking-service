@@ -9,5 +9,6 @@ public interface WaterTrackerService {
 
     List<WaterIntake> getWaterIntakeByUsername(String username);
     WaterIntake saveWaterIntake(WaterIntake waterIntake);
+    WaterIntake updateWaterIntake(String id, WaterIntake waterIntake);
 
 }

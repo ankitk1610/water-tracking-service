@@ -10,5 +10,5 @@ import java.util.List;
 @Repository
 public interface WaterIntakeRepository extends MongoRepository<WaterIntake, String> {
 
-    List<WaterIntake> findByUsername(String username);
+    List<WaterIntake> findByUsernameOrderByUpdatedAtDesc(String username);
 }

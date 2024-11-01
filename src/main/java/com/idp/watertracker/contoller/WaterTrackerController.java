@@ -40,6 +40,13 @@ public class WaterTrackerController {
         );
     }
 
+    @PutMapping()
+    public ResponseEntity<?> saveWaterIntake(@RequestParam("id") String id , @Valid  @RequestBody WaterIntake waterIntake) {
+        return ResponseEntity.status(HttpStatus.OK).body(
+                waterTrackerService.updateWaterIntake(id,waterIntake)
+        );
+    }
+
     @GetMapping()
     public ResponseEntity<?> getUsersWaterIntake(@RequestParam(name = "username") String username) {
         return ResponseEntity.status(HttpStatus.OK).body(
