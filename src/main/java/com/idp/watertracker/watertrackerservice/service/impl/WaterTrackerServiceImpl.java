@@ -1,10 +1,10 @@
 package com.idp.watertracker.watertrackerservice.service.impl;
 
-import com.idp.watertracker.notification.producer.utils.Constants;
 import com.idp.watertracker.watertrackerservice.exception.IntakeNotFoundException;
 import com.idp.watertracker.watertrackerservice.model.WaterIntake;
 import com.idp.watertracker.watertrackerservice.repository.WaterIntakeRepository;
 import com.idp.watertracker.watertrackerservice.service.WaterTrackerService;
+import com.idp.watertracker.watertrackerservice.utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
