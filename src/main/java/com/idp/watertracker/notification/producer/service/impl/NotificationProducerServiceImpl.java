@@ -5,7 +5,6 @@ import com.idp.watertracker.notification.producer.model.kafka.event.PushNotifica
 import com.idp.watertracker.notification.producer.model.kafka.EventMetadata;
 import com.idp.watertracker.notification.producer.model.kafka.KafkaEvent;
 import com.idp.watertracker.notification.producer.model.response.KafkaResponse;
-import com.idp.watertracker.notification.producer.service.KafkaProducerService;
 import com.idp.watertracker.notification.producer.service.NotificationProducerService;
 import com.idp.watertracker.notification.producer.validator.NotificationValidator;
 import org.apache.coyote.BadRequestException;
@@ -19,32 +18,33 @@ public class NotificationProducerServiceImpl implements NotificationProducerServ
     @Autowired
     private NotificationValidator notificationValidator;
 
-    @Autowired
-    private KafkaProducerService kafkaProducerService;
+//    @Autowired
+//    private KafkaProducerService kafkaProducerService;
 
     @Override
     public KafkaResponse sendNotification(Notification notification) {
 
         notificationValidator.validate(notification);
         
-        return pushNotificationToKafkaTopic(notification);
+//        return pushNotificationToKafkaTopic(notification);
+        return null;
 
     }
 
-    private KafkaResponse pushNotificationToKafkaTopic(Notification notification) {
-
-        KafkaEvent<PushNotificationEvent> kafkaEvent = new KafkaEvent<>();
-        kafkaEvent.setMeta(new EventMetadata(notification.getRequestId(), notification.getType()));
-        kafkaEvent.setData(notification.getPushData());
-
-        try {
-            kafkaProducerService.sendMessageToKafkaTopic(kafkaEvent);
-        } catch (BadRequestException e) {
-            throw new RuntimeException(e);
-        }
-
-        return new KafkaResponse(notification.getRequestId(), notification.getId());
-
-
-    }
+//    private KafkaResponse pushNotificationToKafkaTopic(Notification notification) {
+//
+//        KafkaEvent<PushNotificationEvent> kafkaEvent = new KafkaEvent<>();
+//        kafkaEvent.setMeta(new EventMetadata(notification.getRequestId(), notification.getType()));
+//        kafkaEvent.setData(notification.getPushData());
+//
+//        try {
+//            kafkaProducerService.sendMessageToKafkaTopic(kafkaEvent);
+//        } catch (BadRequestException e) {
+//            throw new RuntimeException(e);
+//        }
+//
+//        return new KafkaResponse(notification.getRequestId(), notification.getId());
+//
+//
+//    }
 }
