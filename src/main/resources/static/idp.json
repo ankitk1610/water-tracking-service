@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "565416876022",
+    "project_id": "indiandietplanner-51e8d",
+    "storage_bucket": "indiandietplanner-51e8d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565416876022:android:5e57f4feac6792a6ab99d7",
+        "android_client_info": {
+          "package_name": "com.abhi.fitindia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565416876022-tu0kdhhtmi0p66couq5r4qqih87gifom.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.abhi.fitindia",
+            "certificate_hash": "4da6cfa4ce2b5dd895996db61c284cfd630411e7"
+          }
+        },
+        {
+          "client_id": "565416876022-71srcv72tofu94fcne3vhkk9cq2baorc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVKgpNgQcgQnFwYKKHjx1-0QzEtta4dBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565416876022-71srcv72tofu94fcne3vhkk9cq2baorc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565416876022:android:fec6a6c21cb5179bab99d7",
+        "android_client_info": {
+          "package_name": "com.abhi.fitindia.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565416876022-71srcv72tofu94fcne3vhkk9cq2baorc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVKgpNgQcgQnFwYKKHjx1-0QzEtta4dBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565416876022-71srcv72tofu94fcne3vhkk9cq2baorc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565416876022:android:4178a54bb326524cab99d7",
+        "android_client_info": {
+          "package_name": "com.abhi.indiandietplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565416876022-71srcv72tofu94fcne3vhkk9cq2baorc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVKgpNgQcgQnFwYKKHjx1-0QzEtta4dBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565416876022-71srcv72tofu94fcne3vhkk9cq2baorc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

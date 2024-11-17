@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "your-project-id",
+  "private_key_id": "your-private-key-id",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nAAAAB3NzaC1yc2EAAAADAQABAAABAQDnmensLkc7XyCm/Bpq30PlJRqSj2LIu2daZEUSHJ3FX/3mV9YZ9GpQK0Sr1BXEIcYmODzPdHr8EnC4CLPOLuoNtP7H2rJCty3wLMeaTwPf9KZK2UtoXFEtYoFeRz8v6wo1KGSdEB8hDsPDOEzadA3L2LDioPkj0apx9+Y3f/4fejQQUxcotalWTizvKznne27wr+JcF0k39aFpGMHmmJfnIjsYtTi24DBZNspJQ/zHgzfAmzpzxSY+pXNhlbWxUqqEb18+hQLaxFK79QwKq7jnrPtWsG0h+oFA7B7PtXo6XZtMY3WCEuQymO12OIfwd8gCe/SggwkDFcY0lTZw1ckr\nPrivate-Lines: 14\nAAABACwPiAU6uKp+6oNaKtxyJUSOzoNba/usS3lS4iET+J/4JyGPTFgbu64MzT+z\nVYC+vCfBQzBkhJE4IOGiJjLvke+Ro3b6EDfJCaBLpJ2isqYEsS5EMKhmB7uOpfX9\nr/O5z3NVf+6xhnqPiIa3S0e0FHvXea9j2IIL/VU5SD7+xqXOCS91Lo/1MEqmIwMV\nxf5j6fXX2PPASbw+QvGUCKeF8Gey1n0PYjQ6zlllWy4afOrsTOYfxAKYd9+gPZFU\nMd/pme9mxJm89aDY5P5I85I+6UPyx0W56J0Cw8OOGzknWTDS/D7kdVVw0zoK9bPK\nbjJLP28nz04J84EkeIcZMezfyEEAAACBAPtwH0/Bi/owShjIPXzHxGe5iSim79xL\nu7EWVmRbxKFuImRYZhKsZdIorLLWeBR3s7sq8gR9uPPne5fDvlHqvlU/ZNkA4h/B\nzpdCU02+a9QlIZI+aSIySiePzK8063EqF3mgOKNKhZ3IRs75/Niy6CmbDdM6hoNs\nX67tkZ2ZYrdpAAAAgQDrzadgeGpQyL+MSJYAYpyoPJ3r0LlsLDSy+as9r1Kb7nYP\nwG9b2ByFsKstonrdcQxZTQtQB7IhlX9+xvPSu0GXCRJTo10W4nSq+9m303eWg2Kw\nnrOTEZ8WTCV04Ez8KmNEC+qsO9xFSeqj4/X/TXbxt4XQymfqoKZJodCSuLKdcwAA\nAIAHzOrm+WEqk6L6UfzvvHjCKsX72iuXZn1b4dHBxEsenFRO/ano4PrW6paTdwdw\nDqhxVQIXDaD60BnJvbc0m8dAUPK1ukwaRiC/9hnu2MpNgzq+o7EbyOnBBh5RUWi7\njdXXGgoY05xgoNESjQ8AUMPeCqLz2s8GdFxRxNECcsRKUw==\nPrivate-MAC: 150a2c2edb59119651858f6c390f6a77caac0c3f\n-----END PRIVATE KEY-----\n",
+  "client_email": "your-service-account-email@your-project-id.iam.gserviceaccount.com",
+  "client_id": "your-client-id",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/your-service-account-email@your-project-id.iam.gserviceaccount.com"
+}
